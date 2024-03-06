@@ -12,6 +12,9 @@
 		B89DF2202B954FB500EC9CEB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF21F2B954FB500EC9CEB /* Item.swift */; };
 		B89DF2222B954FB800EC9CEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B89DF2212B954FB800EC9CEB /* Assets.xcassets */; };
 		B89DF2252B954FB800EC9CEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B89DF2242B954FB800EC9CEB /* Preview Assets.xcassets */; };
+		B89DF22C2B9586F300EC9CEB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF22B2B9586F300EC9CEB /* MainView.swift */; };
+		B89DF22E2B95871000EC9CEB /* DeckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF22D2B95871000EC9CEB /* DeckView.swift */; };
+		B89DF2302B95871C00EC9CEB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF22F2B95871C00EC9CEB /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		B89DF21F2B954FB500EC9CEB /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		B89DF2212B954FB800EC9CEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B89DF2242B954FB800EC9CEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B89DF22B2B9586F300EC9CEB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B89DF22D2B95871000EC9CEB /* DeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckView.swift; sourceTree = "<group>"; };
+		B89DF22F2B95871C00EC9CEB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +61,10 @@
 			children = (
 				B89DF21B2B954FB500EC9CEB /* rocketgamesApp.swift */,
 				B89DF21D2B954FB500EC9CEB /* ContentView.swift */,
+				B89DF22F2B95871C00EC9CEB /* SettingsView.swift */,
+				B89DF22D2B95871000EC9CEB /* DeckView.swift */,
 				B89DF21F2B954FB500EC9CEB /* Item.swift */,
+				B89DF22B2B9586F300EC9CEB /* MainView.swift */,
 				B89DF2212B954FB800EC9CEB /* Assets.xcassets */,
 				B89DF2232B954FB800EC9CEB /* Preview Content */,
 			);
@@ -140,7 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B89DF22E2B95871000EC9CEB /* DeckView.swift in Sources */,
 				B89DF21E2B954FB500EC9CEB /* ContentView.swift in Sources */,
+				B89DF22C2B9586F300EC9CEB /* MainView.swift in Sources */,
+				B89DF2302B95871C00EC9CEB /* SettingsView.swift in Sources */,
 				B89DF2202B954FB500EC9CEB /* Item.swift in Sources */,
 				B89DF21C2B954FB500EC9CEB /* rocketgamesApp.swift in Sources */,
 			);

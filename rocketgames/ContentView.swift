@@ -13,31 +13,24 @@ struct ContentView: View {
     @Query private var items: [Item]
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
+        TabView {
+            MainView()
+                .badge(2)
+                .tabItem {
+                    Label("Life Counter", systemImage: "tray.and.arrow.down.fill")
                 }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
+            DeckView()
+                .tabItem {
+                    Label("Decks", systemImage: "tray.and.arrow.up.fill")
                 }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
+            ProfileView()
+                .badge("!")
+                .tabItem {
+                    Label("Profile", systemImage: "person.crop.circle.fill")
                 }
-            }
-        } detail: {
-            Text("Select an item")
         }
     }
+    
 
     private func addItem() {
         withAnimation {
