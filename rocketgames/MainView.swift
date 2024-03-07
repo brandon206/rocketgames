@@ -13,8 +13,28 @@ struct MainView: View {
     
     var body: some View {
         VStack {
-            Text("Game Options").font(.title)
+            
+            ZStack {
+                Text("Game Options").font(.title).foregroundColor(.white).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+
+                HStack {
+                    Spacer()
+                    
+                    Button(action: {
+                        // Handle close button click action
+                        print("Close button clicked!")
+                    }) {
+                        Image(systemName: "xmark")
+                            .font(.system(size: 30))
+                            .fontWeight(.bold)
+                            .foregroundColor(.red)
+                            .padding()
+                    }
+                }
+            }
+            
             Spacer()
+            
             VStack {
                 Button(action: {
                     // Handle button click action
