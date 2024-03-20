@@ -5,6 +5,7 @@
 //  Created by Brandon Park on 3/3/24.
 //
 
+import SwiftData
 import SwiftUI
 import FirebaseCore
 
@@ -30,5 +31,6 @@ struct rocketgamesApp: App {
         ContentView()
       }
     }
+    .modelContainer(for: Person.self)
   }
 }

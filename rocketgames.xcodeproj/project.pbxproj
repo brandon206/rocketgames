@@ -22,6 +22,11 @@
 		B89DF23D2B99AC6600EC9CEB /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = B89DF23C2B99AC6600EC9CEB /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		B89DF23F2B99AC6600EC9CEB /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = B89DF23E2B99AC6600EC9CEB /* FirebaseAppCheck */; };
 		B89DF2422B99AE6E00EC9CEB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B89DF2412B99AE6E00EC9CEB /* FirebaseFirestore */; };
+		B89DF2442BA7882700EC9CEB /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF2432BA7882700EC9CEB /* Person.swift */; };
+		B89DF2462BA8A36300EC9CEB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF2452BA8A36300EC9CEB /* HomeView.swift */; };
+		B89DF2482BAAA11900EC9CEB /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF2472BAAA11900EC9CEB /* SignInView.swift */; };
+		B89DF24A2BAAA31400EC9CEB /* RocketGamesTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF2492BAAA31400EC9CEB /* RocketGamesTextField.swift */; };
+		B89DF24E2BAAAC5000EC9CEB /* RocketGamesSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF24D2BAAAC5000EC9CEB /* RocketGamesSecureField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +40,11 @@
 		B89DF22D2B95871000EC9CEB /* DeckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckView.swift; sourceTree = "<group>"; };
 		B89DF22F2B95871C00EC9CEB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		B89DF2332B99AC1600EC9CEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B89DF2432BA7882700EC9CEB /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		B89DF2452BA8A36300EC9CEB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B89DF2472BAAA11900EC9CEB /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		B89DF2492BAAA31400EC9CEB /* RocketGamesTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketGamesTextField.swift; sourceTree = "<group>"; };
+		B89DF24D2BAAAC5000EC9CEB /* RocketGamesSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketGamesSecureField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +85,15 @@
 			isa = PBXGroup;
 			children = (
 				B89DF21B2B954FB500EC9CEB /* rocketgamesApp.swift */,
+				B89DF2492BAAA31400EC9CEB /* RocketGamesTextField.swift */,
+				B89DF24D2BAAAC5000EC9CEB /* RocketGamesSecureField.swift */,
 				B89DF21D2B954FB500EC9CEB /* ContentView.swift */,
+				B89DF2432BA7882700EC9CEB /* Person.swift */,
 				B89DF22F2B95871C00EC9CEB /* SettingsView.swift */,
 				B89DF22D2B95871000EC9CEB /* DeckView.swift */,
+				B89DF2452BA8A36300EC9CEB /* HomeView.swift */,
 				B89DF21F2B954FB500EC9CEB /* Item.swift */,
+				B89DF2472BAAA11900EC9CEB /* SignInView.swift */,
 				B89DF22B2B9586F300EC9CEB /* MainView.swift */,
 				B89DF2332B99AC1600EC9CEB /* GoogleService-Info.plist */,
 				B89DF2212B954FB800EC9CEB /* Assets.xcassets */,
@@ -184,12 +199,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B89DF2482BAAA11900EC9CEB /* SignInView.swift in Sources */,
+				B89DF24A2BAAA31400EC9CEB /* RocketGamesTextField.swift in Sources */,
 				B89DF22E2B95871000EC9CEB /* DeckView.swift in Sources */,
 				B89DF21E2B954FB500EC9CEB /* ContentView.swift in Sources */,
 				B89DF22C2B9586F300EC9CEB /* MainView.swift in Sources */,
 				B89DF2302B95871C00EC9CEB /* SettingsView.swift in Sources */,
+				B89DF2442BA7882700EC9CEB /* Person.swift in Sources */,
+				B89DF2462BA8A36300EC9CEB /* HomeView.swift in Sources */,
 				B89DF2202B954FB500EC9CEB /* Item.swift in Sources */,
 				B89DF21C2B954FB500EC9CEB /* rocketgamesApp.swift in Sources */,
+				B89DF24E2BAAAC5000EC9CEB /* RocketGamesSecureField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

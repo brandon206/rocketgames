@@ -6,10 +6,23 @@
 //
 
 import SwiftUI
+import Observation
+
+@Observable
+class SignInViewModel {
+    var email = ""
+    var password = ""
+}
 
 struct SignInView: View {
+    @State var viewModel = SignInViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            RocketGamesTextField(placeholder: "Email", text: $viewModel.email)
+            RocketGamesSecureField(placeholder: "Password", text: $viewModel.password)
+        }
+        .padding()
     }
 }
 
