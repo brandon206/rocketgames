@@ -12,7 +12,7 @@ struct RocketGamesTextField: View {
     @Binding var text: String
     
     var body: some View {
-        TextField("Email Address", text:$text)
+        TextField(placeholder, text:$text)
             .autocorrectionDisabled()
             .textInputAutocapitalization(.never)
             .padding()
