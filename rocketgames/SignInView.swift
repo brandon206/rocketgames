@@ -12,6 +12,7 @@ import Observation
 class SignInViewModel {
     var email = ""
     var password = ""
+    var showPassword = false
 }
 
 struct SignInView: View {
@@ -20,7 +21,7 @@ struct SignInView: View {
     var body: some View {
         VStack {
             RocketGamesTextField(placeholder: "Email", text: $viewModel.email)
-            RocketGamesSecureField(placeholder: "Password", text: $viewModel.password)
+            RocketGamesSecureField(placeholder: "Password", showPassword: $viewModel.showPassword, text: $viewModel.password)
         }
         .padding()
     }
