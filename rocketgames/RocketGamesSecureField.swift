@@ -24,6 +24,7 @@ struct RocketGamesSecureField: View {
                         Image(systemName: "eye")
                             .padding()
                             .contentTransition(.symbolEffect)
+                            .foregroundColor(Color("AppColor"))
                     }
                 }
         } else {
@@ -32,9 +33,9 @@ struct RocketGamesSecureField: View {
                 .textInputAutocapitalization(.never)
                 .padding()
                 .foregroundStyle(.primary)
-                .background(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                .background(RoundedRectangle(cornerRadius: 10)
                     .fill(.ultraThinMaterial)
-                    .stroke(.primary, style: StrokeStyle(lineWidth: 1)))
+                    .stroke(Color("AppColor"), style: StrokeStyle(lineWidth: 1)))
                 .overlay(alignment: .trailing) {
                     Button(role: .cancel) {
                         withAnimation(.snappy) {
@@ -44,6 +45,7 @@ struct RocketGamesSecureField: View {
                         Image(systemName: "eye.slash")
                             .padding()
                             .contentTransition(.symbolEffect)
+                            .foregroundStyle(Color("AppColor"))
                     }
                 }
         }
