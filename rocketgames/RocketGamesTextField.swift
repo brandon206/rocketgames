@@ -17,9 +17,9 @@ struct RocketGamesTextField: View {
             .textInputAutocapitalization(.never)
             .padding()
             .foregroundStyle(.primary)
-            .background(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+            .background(RoundedRectangle(cornerRadius: 10)
                 .fill(.ultraThinMaterial)
-                .stroke(.primary, style: StrokeStyle(lineWidth: 1)))
+                .stroke(Color("AppColor"), style: StrokeStyle(lineWidth: 1)))
     }
 }
 

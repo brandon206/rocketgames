@@ -20,10 +20,57 @@ struct SignInView: View {
     
     var body: some View {
         VStack {
-            RocketGamesTextField(placeholder: "Email", text: $viewModel.email)
-            RocketGamesSecureField(placeholder: "Password", showPassword: $viewModel.showPassword, text: $viewModel.password)
+            
+            Spacer()
+            
+            VStack {
+                RocketGamesTextField(placeholder: "Email", text: $viewModel.email)
+                RocketGamesSecureField(placeholder: "Password", showPassword: $viewModel.showPassword, text: $viewModel.password)
+                Button("Forgot Password") {
+                    
+                }.bold().padding(.top)
+                    .foregroundColor(Color("AppColor"))
+                
+                Button() {
+                    
+                } label: {
+                    Text("Sign In")
+                        .foregroundColor(.white)
+                        .padding()
+                        .frame(height:55)
+                        .frame(maxWidth: .infinity)
+                        .background(
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color("AppColor"))
+                        )
+                }
+            }
+            .padding()
+            
+            Spacer()
+            
+            VStack(spacing: 24) {
+                Text("Don't have an account yet?")
+                    .foregroundColor(Color("AppColor"))
+                Button() {
+                    
+                } label: {
+                    Text("Register")
+                        .foregroundColor(Color("AppColor"))
+                        .padding()
+                        .frame(height:55)
+                        .frame(maxWidth: .infinity)
+                        .background(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color("AppColor"))
+                        )
+                }
+            }
+            .padding()
+            .padding(.bottom)
         }
-        .padding()
+        .frame(maxHeight: .infinity, alignment: .top)
+        .ignoresSafeArea()
     }
 }
 
