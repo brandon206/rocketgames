@@ -5,10 +5,8 @@
 //  Created by Brandon Park on 3/3/24.
 //
 
-import SwiftData
 import SwiftUI
 import FirebaseCore
-
 
 class AppDelegate: NSObject, UIApplicationDelegate {
   func application(_ application: UIApplication,
@@ -28,9 +26,9 @@ struct rocketgamesApp: App {
   var body: some Scene {
     WindowGroup {
       NavigationView {
-        ContentView()
+//        ContentView()
+          SignInView()
       }
     }
-    .modelContainer(for: Person.self)
   }
 }
