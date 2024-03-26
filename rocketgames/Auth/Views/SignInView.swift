@@ -6,14 +6,6 @@
 //
 
 import SwiftUI
-import Observation
-
-@Observable
-class SignInViewModel {
-    var email = ""
-    var password = ""
-    var showPassword = false
-}
 
 struct SignInView: View {
     @State var viewModel = SignInViewModel()
@@ -32,7 +24,7 @@ struct SignInView: View {
                     .foregroundColor(Color("AppColor"))
                 
                 Button() {
-                    
+                    viewModel.signInWithEmail()
                 } label: {
                     Text("Sign In")
                         .foregroundColor(.white)
