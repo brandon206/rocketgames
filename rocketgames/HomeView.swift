@@ -8,10 +8,17 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var viewModel = SignOutViewModel()
+
     var body: some View {
         VStack {
-            Spacer()
             Text("THIS IS Home VIEW")
+            
+            Button(role: .destructive) {
+                viewModel.signOut()
+            } label: {
+                Text("Sign Out")
+            }
         }
     }
 }

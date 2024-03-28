@@ -27,7 +27,11 @@ struct rocketgamesApp: App {
     WindowGroup {
       NavigationView {
 //        ContentView()
-          SignInView()
+          if (AuthService.shared.currentUser != nil) {
+              HomeView()
+          } else {
+              SignInView()
+          }
       }
     }
   }

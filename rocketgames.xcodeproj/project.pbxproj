@@ -32,6 +32,9 @@
 		B89DF2612BB1325300EC9CEB /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = B89DF2602BB1325300EC9CEB /* FirebaseAuthCombine-Community */; };
 		B89DF2632BB1325300EC9CEB /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = B89DF2622BB1325300EC9CEB /* FirebaseCrashlytics */; };
 		B89DF2692BB1352E00EC9CEB /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF2682BB1352E00EC9CEB /* SignInViewModel.swift */; };
+		B89DF26F2BB5482100EC9CEB /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF26E2BB5482100EC9CEB /* String+Ext.swift */; };
+		B89DF2712BB54C7500EC9CEB /* SignOutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF2702BB54C7500EC9CEB /* SignOutViewModel.swift */; };
+		B89DF2732BB550EC00EC9CEB /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF2722BB550EC00EC9CEB /* RegistrationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		B89DF24D2BAAAC5000EC9CEB /* RocketGamesSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketGamesSecureField.swift; sourceTree = "<group>"; };
 		B89DF24F2BB131A600EC9CEB /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		B89DF2682BB1352E00EC9CEB /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		B89DF26E2BB5482100EC9CEB /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		B89DF2702BB54C7500EC9CEB /* SignOutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutViewModel.swift; sourceTree = "<group>"; };
+		B89DF2722BB550EC00EC9CEB /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +100,9 @@
 		B89DF21A2B954FB500EC9CEB /* rocketgames */ = {
 			isa = PBXGroup;
 			children = (
+				B89DF26D2BB5480200EC9CEB /* Utils */,
 				B89DF2642BB134DE00EC9CEB /* Auth */,
 				B89DF21B2B954FB500EC9CEB /* rocketgamesApp.swift */,
-				B89DF2492BAAA31400EC9CEB /* RocketGamesTextField.swift */,
-				B89DF24D2BAAAC5000EC9CEB /* RocketGamesSecureField.swift */,
 				B89DF21D2B954FB500EC9CEB /* ContentView.swift */,
 				B89DF2432BA7882700EC9CEB /* Person.swift */,
 				B89DF22F2B95871C00EC9CEB /* SettingsView.swift */,
@@ -141,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				B89DF2682BB1352E00EC9CEB /* SignInViewModel.swift */,
+				B89DF2702BB54C7500EC9CEB /* SignOutViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -149,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				B89DF2472BAAA11900EC9CEB /* SignInView.swift */,
+				B89DF2722BB550EC00EC9CEB /* RegistrationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -159,6 +166,16 @@
 				B89DF24F2BB131A600EC9CEB /* AuthService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		B89DF26D2BB5480200EC9CEB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B89DF2492BAAA31400EC9CEB /* RocketGamesTextField.swift */,
+				B89DF24D2BAAAC5000EC9CEB /* RocketGamesSecureField.swift */,
+				B89DF26E2BB5482100EC9CEB /* String+Ext.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,10 +267,13 @@
 				B89DF24A2BAAA31400EC9CEB /* RocketGamesTextField.swift in Sources */,
 				B89DF22E2B95871000EC9CEB /* DeckView.swift in Sources */,
 				B89DF2502BB131A600EC9CEB /* AuthService.swift in Sources */,
+				B89DF2712BB54C7500EC9CEB /* SignOutViewModel.swift in Sources */,
 				B89DF2692BB1352E00EC9CEB /* SignInViewModel.swift in Sources */,
 				B89DF21E2B954FB500EC9CEB /* ContentView.swift in Sources */,
+				B89DF2732BB550EC00EC9CEB /* RegistrationView.swift in Sources */,
 				B89DF22C2B9586F300EC9CEB /* MainView.swift in Sources */,
 				B89DF2302B95871C00EC9CEB /* SettingsView.swift in Sources */,
+				B89DF26F2BB5482100EC9CEB /* String+Ext.swift in Sources */,
 				B89DF2442BA7882700EC9CEB /* Person.swift in Sources */,
 				B89DF2462BA8A36300EC9CEB /* HomeView.swift in Sources */,
 				B89DF2202B954FB500EC9CEB /* Item.swift in Sources */,
