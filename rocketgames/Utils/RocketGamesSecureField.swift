@@ -14,7 +14,7 @@ struct RocketGamesSecureField: View {
     
     var body: some View {
         if (showPassword) {
-            RocketGamesTextField(placeholder: "Password", text: $text)
+            RocketGamesTextField(placeholder: placeholder, text: $text)
                 .overlay(alignment: .trailing) {
                     Button(role: .cancel) {
                         withAnimation(.snappy) {

@@ -35,6 +35,7 @@
 		B89DF26F2BB5482100EC9CEB /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF26E2BB5482100EC9CEB /* String+Ext.swift */; };
 		B89DF2712BB54C7500EC9CEB /* SignOutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF2702BB54C7500EC9CEB /* SignOutViewModel.swift */; };
 		B89DF2732BB550EC00EC9CEB /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF2722BB550EC00EC9CEB /* RegistrationView.swift */; };
+		B89DF2752BB6702D00EC9CEB /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF2742BB6702D00EC9CEB /* RegistrationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		B89DF26E2BB5482100EC9CEB /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		B89DF2702BB54C7500EC9CEB /* SignOutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutViewModel.swift; sourceTree = "<group>"; };
 		B89DF2722BB550EC00EC9CEB /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		B89DF2742BB6702D00EC9CEB /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			children = (
 				B89DF2682BB1352E00EC9CEB /* SignInViewModel.swift */,
 				B89DF2702BB54C7500EC9CEB /* SignOutViewModel.swift */,
+				B89DF2742BB6702D00EC9CEB /* RegistrationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B89DF2482BAAA11900EC9CEB /* SignInView.swift in Sources */,
+				B89DF2752BB6702D00EC9CEB /* RegistrationViewModel.swift in Sources */,
 				B89DF24A2BAAA31400EC9CEB /* RocketGamesTextField.swift in Sources */,
 				B89DF22E2B95871000EC9CEB /* DeckView.swift in Sources */,
 				B89DF2502BB131A600EC9CEB /* AuthService.swift in Sources */,
