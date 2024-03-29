@@ -36,6 +36,7 @@
 		B89DF2712BB54C7500EC9CEB /* SignOutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF2702BB54C7500EC9CEB /* SignOutViewModel.swift */; };
 		B89DF2732BB550EC00EC9CEB /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF2722BB550EC00EC9CEB /* RegistrationView.swift */; };
 		B89DF2752BB6702D00EC9CEB /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF2742BB6702D00EC9CEB /* RegistrationViewModel.swift */; };
+		B89DF2772BB6744900EC9CEB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B89DF2762BB6744900EC9CEB /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		B89DF2702BB54C7500EC9CEB /* SignOutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOutViewModel.swift; sourceTree = "<group>"; };
 		B89DF2722BB550EC00EC9CEB /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		B89DF2742BB6702D00EC9CEB /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		B89DF2762BB6744900EC9CEB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		B89DF20F2B954FB500EC9CEB = {
 			isa = PBXGroup;
 			children = (
+				B89DF2762BB6744900EC9CEB /* README.md */,
 				B89DF21A2B954FB500EC9CEB /* rocketgames */,
 				B89DF2192B954FB500EC9CEB /* Products */,
 				B89DF2402B99AD6D00EC9CEB /* Frameworks */,
@@ -255,6 +258,7 @@
 			files = (
 				B89DF2252B954FB800EC9CEB /* Preview Assets.xcassets in Resources */,
 				B89DF2222B954FB800EC9CEB /* Assets.xcassets in Resources */,
+				B89DF2772BB6744900EC9CEB /* README.md in Resources */,
 				B89DF2342B99AC1600EC9CEB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
