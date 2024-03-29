@@ -63,9 +63,10 @@ struct SignInView: View {
         }
         .frame(maxHeight: .infinity, alignment: .top)
         .ignoresSafeArea()
-        .sheet(isPresented: $viewModel.showRegistration, content: {
-            HomeView()
-        })
+        .sheet(isPresented: $viewModel.showRegistration) {
+            RegistrationView()
+                .presentationDetents([.fraction(0.5)])
+        }
     }
 }
 

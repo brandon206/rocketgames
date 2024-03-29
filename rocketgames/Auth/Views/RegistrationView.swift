@@ -6,16 +6,6 @@
 //
 
 import SwiftUI
-import Observation
-
-@Observable
-class RegistrationViewModel {
-    var email = ""
-    var password = ""
-    var showPassword = false
-    var passwordCheck = ""
-    var showPasswordCheck = false
-}
 
 struct RegistrationView: View {
     @Environment(\.dismiss) var dismiss
@@ -24,7 +14,7 @@ struct RegistrationView: View {
         VStack {
             HStack {
                 Text("Register Now")
-                    .font(.largeTitle)
+                    .font(.title)
                     .bold()
                 Spacer()
                 Button(role: .cancel) {
@@ -40,8 +30,24 @@ struct RegistrationView: View {
             RocketGamesSecureField(placeholder: "Password", showPassword: $viewModel.showPassword, text: $viewModel.password)
             
             RocketGamesSecureField(placeholder: "Confirm Password", showPassword: $viewModel.showPasswordCheck, text: $viewModel.passwordCheck)
+            
+            Button {
+                viewModel.registerWithEmail()
+            } label: {
+                Text("Register")
+                    .bold()
+                    .foregroundColor(.white)
+                    .padding()
+                    .frame(height:55)
+                    .frame(maxWidth: .infinity)
+                    .background(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white)                    )
+            }
         }
         .padding()
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(Color("AppColor"))
     }
 }
 
