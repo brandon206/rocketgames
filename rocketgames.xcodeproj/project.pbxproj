@@ -37,6 +37,7 @@
 		B89DF2732BB550EC00EC9CEB /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF2722BB550EC00EC9CEB /* RegistrationView.swift */; };
 		B89DF2752BB6702D00EC9CEB /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF2742BB6702D00EC9CEB /* RegistrationViewModel.swift */; };
 		B89DF2772BB6744900EC9CEB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B89DF2762BB6744900EC9CEB /* README.md */; };
+		B89DF2792BB67E8D00EC9CEB /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF2782BB67E8C00EC9CEB /* ForgotPasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		B89DF2722BB550EC00EC9CEB /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		B89DF2742BB6702D00EC9CEB /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		B89DF2762BB6744900EC9CEB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B89DF2782BB67E8C00EC9CEB /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 			children = (
 				B89DF2472BAAA11900EC9CEB /* SignInView.swift */,
 				B89DF2722BB550EC00EC9CEB /* RegistrationView.swift */,
+				B89DF2782BB67E8C00EC9CEB /* ForgotPasswordView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				B89DF2462BA8A36300EC9CEB /* HomeView.swift in Sources */,
 				B89DF2202B954FB500EC9CEB /* Item.swift in Sources */,
 				B89DF21C2B954FB500EC9CEB /* rocketgamesApp.swift in Sources */,
+				B89DF2792BB67E8D00EC9CEB /* ForgotPasswordView.swift in Sources */,
 				B89DF24E2BAAAC5000EC9CEB /* RocketGamesSecureField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

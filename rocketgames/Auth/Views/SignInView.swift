@@ -19,7 +19,7 @@ struct SignInView: View {
                 RocketGamesTextField(placeholder: "Email", text: $viewModel.email)
                 RocketGamesSecureField(placeholder: "Password", showPassword: $viewModel.showPassword, text: $viewModel.password)
                 Button("Forgot Password") {
-                    
+                    viewModel.showResetPassword = true
                 }.bold().padding(.top)
                     .foregroundColor(Color("AppColor"))
                 
@@ -66,6 +66,9 @@ struct SignInView: View {
         .sheet(isPresented: $viewModel.showRegistration) {
             RegistrationView()
                 .presentationDetents([.fraction(0.5)])
+        }
+        .sheet(isPresented: $viewModel.showResetPassword) {
+            ForgotPasswordView(viewModel: viewModel).presentationDetents([.fraction(0.3)])
         }
     }
 }
