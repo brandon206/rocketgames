@@ -18,11 +18,21 @@ enum AppAuthError: Error {
 class SignInViewModel {
     var email = ""
     var password = ""
+    var resetPasswordEmail = ""
     var showPassword = false
     var showRegistration = false
+    var showResetPassword = false
     
-    func validateForm() throws {
+    func validateSignInForm() throws {
         if !email.isValidEmail() {
+            throw AppAuthError.invalidEmail
+        } else if password.count < 8 {
+            throw AppAuthError.invalidPasswordLength
+        }
+    }
+    
+    func validateResetPassword() throws {
+        if !resetPasswordEmail.isValidEmail() {
             throw AppAuthError.invalidEmail
         } else if password.count < 8 {
             throw AppAuthError.invalidPasswordLength
@@ -32,8 +42,20 @@ class SignInViewModel {
     func signInWithEmail() {
         Task {
             do {
-                try validateForm()
+                try validateSignInForm()
                 try await AuthService.shared.signInWithEmail(email: email, password: password)
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    func resetPassword() {
+        Task {
+            do {
+                try validateResetPassword()
+                try await AuthService.shared.resetPassword(email: resetPasswordEmail)
+                showResetPassword = false
             } catch {
                 print(error.localizedDescription)
             }

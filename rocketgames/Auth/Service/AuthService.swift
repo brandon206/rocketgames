@@ -36,4 +36,8 @@ final class AuthService {
         try auth.signOut()
         currentUser = nil
     }
+    
+    func resetPassword(email: String) async throws {
+        try await auth.sendPasswordReset(withEmail: email)
+    }
 }
