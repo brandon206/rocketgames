@@ -38,6 +38,10 @@
 		B89DF2752BB6702D00EC9CEB /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF2742BB6702D00EC9CEB /* RegistrationViewModel.swift */; };
 		B89DF2772BB6744900EC9CEB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B89DF2762BB6744900EC9CEB /* README.md */; };
 		B89DF2792BB67E8D00EC9CEB /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF2782BB67E8C00EC9CEB /* ForgotPasswordView.swift */; };
+		B89DF27C2BC0A81800EC9CEB /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF27B2BC0A81800EC9CEB /* InputView.swift */; };
+		B89DF27F2BC0AA2C00EC9CEB /* Loginview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF27E2BC0AA2C00EC9CEB /* Loginview.swift */; };
+		B89DF2842BC0C02E00EC9CEB /* Registerview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF2832BC0C02E00EC9CEB /* Registerview.swift */; };
+		B89DF2872BC0C5AE00EC9CEB /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF2862BC0C5AE00EC9CEB /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +68,10 @@
 		B89DF2742BB6702D00EC9CEB /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		B89DF2762BB6744900EC9CEB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B89DF2782BB67E8C00EC9CEB /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		B89DF27B2BC0A81800EC9CEB /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		B89DF27E2BC0AA2C00EC9CEB /* Loginview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loginview.swift; sourceTree = "<group>"; };
+		B89DF2832BC0C02E00EC9CEB /* Registerview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registerview.swift; sourceTree = "<group>"; };
+		B89DF2862BC0C5AE00EC9CEB /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,9 @@
 		B89DF21A2B954FB500EC9CEB /* rocketgames */ = {
 			isa = PBXGroup;
 			children = (
+				B89DF2852BC0C59B00EC9CEB /* Profile */,
+				B89DF27D2BC0AA1B00EC9CEB /* Core */,
+				B89DF27A2BC0A80900EC9CEB /* Components */,
 				B89DF26D2BB5480200EC9CEB /* Utils */,
 				B89DF2642BB134DE00EC9CEB /* Auth */,
 				B89DF21B2B954FB500EC9CEB /* rocketgamesApp.swift */,
@@ -185,6 +196,39 @@
 				B89DF26E2BB5482100EC9CEB /* String+Ext.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		B89DF27A2BC0A80900EC9CEB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B89DF27B2BC0A81800EC9CEB /* InputView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B89DF27D2BC0AA1B00EC9CEB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B89DF2802BC0BFEC00EC9CEB /* Authentication */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B89DF2802BC0BFEC00EC9CEB /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				B89DF27E2BC0AA2C00EC9CEB /* Loginview.swift */,
+				B89DF2832BC0C02E00EC9CEB /* Registerview.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		B89DF2852BC0C59B00EC9CEB /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B89DF2862BC0C5AE00EC9CEB /* ProfileView.swift */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,13 +327,17 @@
 				B89DF21E2B954FB500EC9CEB /* ContentView.swift in Sources */,
 				B89DF2732BB550EC00EC9CEB /* RegistrationView.swift in Sources */,
 				B89DF22C2B9586F300EC9CEB /* MainView.swift in Sources */,
+				B89DF27F2BC0AA2C00EC9CEB /* Loginview.swift in Sources */,
 				B89DF2302B95871C00EC9CEB /* SettingsView.swift in Sources */,
 				B89DF26F2BB5482100EC9CEB /* String+Ext.swift in Sources */,
+				B89DF27C2BC0A81800EC9CEB /* InputView.swift in Sources */,
 				B89DF2442BA7882700EC9CEB /* Person.swift in Sources */,
 				B89DF2462BA8A36300EC9CEB /* HomeView.swift in Sources */,
 				B89DF2202B954FB500EC9CEB /* Item.swift in Sources */,
+				B89DF2842BC0C02E00EC9CEB /* Registerview.swift in Sources */,
 				B89DF21C2B954FB500EC9CEB /* rocketgamesApp.swift in Sources */,
 				B89DF2792BB67E8D00EC9CEB /* ForgotPasswordView.swift in Sources */,
+				B89DF2872BC0C5AE00EC9CEB /* ProfileView.swift in Sources */,
 				B89DF24E2BAAAC5000EC9CEB /* RocketGamesSecureField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
