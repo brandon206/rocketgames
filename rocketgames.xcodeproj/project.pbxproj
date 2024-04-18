@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B82A0C8F2BD0EAC400C546E4 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A0C8E2BD0EAC400C546E4 /* OnboardingView.swift */; };
+		B82A0C912BD0EE1600C546E4 /* CustomNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A0C902BD0EE1600C546E4 /* CustomNavigationButton.swift */; };
+		B82A0C932BD0F48400C546E4 /* DotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A0C922BD0F48400C546E4 /* DotView.swift */; };
 		B89DF21C2B954FB500EC9CEB /* rocketgamesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF21B2B954FB500EC9CEB /* rocketgamesApp.swift */; };
 		B89DF21E2B954FB500EC9CEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF21D2B954FB500EC9CEB /* ContentView.swift */; };
 		B89DF2202B954FB500EC9CEB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF21F2B954FB500EC9CEB /* Item.swift */; };
@@ -56,6 +59,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B82A0C8E2BD0EAC400C546E4 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		B82A0C902BD0EE1600C546E4 /* CustomNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationButton.swift; sourceTree = "<group>"; };
+		B82A0C922BD0F48400C546E4 /* DotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotView.swift; sourceTree = "<group>"; };
 		B89DF2182B954FB500EC9CEB /* rocketgames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rocketgames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B89DF21B2B954FB500EC9CEB /* rocketgamesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rocketgamesApp.swift; sourceTree = "<group>"; };
 		B89DF21D2B954FB500EC9CEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -116,6 +122,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B82A0C8D2BD0EAB600C546E4 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				B82A0C8E2BD0EAC400C546E4 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		B89DF20F2B954FB500EC9CEB = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +151,7 @@
 		B89DF21A2B954FB500EC9CEB /* rocketgames */ = {
 			isa = PBXGroup;
 			children = (
+				B82A0C8D2BD0EAB600C546E4 /* Onboarding */,
 				B8EE9B042BC0CD3700FD9613 /* Model */,
 				B89DF2852BC0C59B00EC9CEB /* Profile */,
 				B89DF27D2BC0AA1B00EC9CEB /* Core */,
@@ -171,6 +186,8 @@
 			children = (
 				B89DF27B2BC0A81800EC9CEB /* InputView.swift */,
 				B8EE9B022BC0CAEB00FD9613 /* SettingsRowView.swift */,
+				B82A0C902BD0EE1600C546E4 /* CustomNavigationButton.swift */,
+				B82A0C922BD0F48400C546E4 /* DotView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -340,10 +357,13 @@
 				B89DF2202B954FB500EC9CEB /* Item.swift in Sources */,
 				B89DF2842BC0C02E00EC9CEB /* Registerview.swift in Sources */,
 				B89DF21C2B954FB500EC9CEB /* rocketgamesApp.swift in Sources */,
+				B82A0C912BD0EE1600C546E4 /* CustomNavigationButton.swift in Sources */,
 				B8EE9B032BC0CAEB00FD9613 /* SettingsRowView.swift in Sources */,
 				B8EE9B0E2BC0D32D00FD9613 /* AuthViewModel.swift in Sources */,
 				B89DF2872BC0C5AE00EC9CEB /* ProfileView.swift in Sources */,
 				B8EE9B082BC0CDA200FD9613 /* User.swift in Sources */,
+				B82A0C932BD0F48400C546E4 /* DotView.swift in Sources */,
+				B82A0C8F2BD0EAC400C546E4 /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
