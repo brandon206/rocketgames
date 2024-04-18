@@ -9,7 +9,38 @@ import SwiftUI
 
 struct OnboardingView: View {
     var body: some View {
-        Text("Onboarding View Here!")
+        VStack {
+            NavigationStack {
+                NavigationLink(value: "StartGameView") {
+                    Text("Start Game")
+                }
+                .foregroundColor(.white)
+                .fontWeight(.bold)
+                .frame(maxWidth: .infinity)
+                .padding()
+                .background(.blue)
+                .navigationDestination(for: String.self) { view in
+                    if view == "StartGameView" {
+                        StartGameView()
+                    }
+                }
+                
+                NavigationLink(value: "ProfileView") {
+                    Text("Settings")
+                }
+                .foregroundColor(.white)
+                .fontWeight(.bold)
+                .frame(maxWidth: .infinity)
+                .padding()
+                .background(.gray)
+                .navigationDestination(for: String.self) { view in
+                    if view == "ProfileView" {
+                        ProfileView()
+                    }
+                }
+            }
+        }
+        .padding(50)
     }
 }
 

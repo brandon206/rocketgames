@@ -10,6 +10,7 @@
 		B82A0C8F2BD0EAC400C546E4 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A0C8E2BD0EAC400C546E4 /* OnboardingView.swift */; };
 		B82A0C912BD0EE1600C546E4 /* CustomNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A0C902BD0EE1600C546E4 /* CustomNavigationButton.swift */; };
 		B82A0C932BD0F48400C546E4 /* DotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A0C922BD0F48400C546E4 /* DotView.swift */; };
+		B82A0C952BD0FBA100C546E4 /* StartGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A0C942BD0FBA100C546E4 /* StartGameView.swift */; };
 		B89DF21C2B954FB500EC9CEB /* rocketgamesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF21B2B954FB500EC9CEB /* rocketgamesApp.swift */; };
 		B89DF21E2B954FB500EC9CEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF21D2B954FB500EC9CEB /* ContentView.swift */; };
 		B89DF2202B954FB500EC9CEB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF21F2B954FB500EC9CEB /* Item.swift */; };
@@ -62,6 +63,7 @@
 		B82A0C8E2BD0EAC400C546E4 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		B82A0C902BD0EE1600C546E4 /* CustomNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationButton.swift; sourceTree = "<group>"; };
 		B82A0C922BD0F48400C546E4 /* DotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotView.swift; sourceTree = "<group>"; };
+		B82A0C942BD0FBA100C546E4 /* StartGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameView.swift; sourceTree = "<group>"; };
 		B89DF2182B954FB500EC9CEB /* rocketgames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rocketgames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B89DF21B2B954FB500EC9CEB /* rocketgamesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rocketgamesApp.swift; sourceTree = "<group>"; };
 		B89DF21D2B954FB500EC9CEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				B82A0C8E2BD0EAC400C546E4 /* OnboardingView.swift */,
+				B82A0C942BD0FBA100C546E4 /* StartGameView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				B89DF21E2B954FB500EC9CEB /* ContentView.swift in Sources */,
 				B89DF27F2BC0AA2C00EC9CEB /* Loginview.swift in Sources */,
 				B89DF27C2BC0A81800EC9CEB /* InputView.swift in Sources */,
+				B82A0C952BD0FBA100C546E4 /* StartGameView.swift in Sources */,
 				B89DF2202B954FB500EC9CEB /* Item.swift in Sources */,
 				B89DF2842BC0C02E00EC9CEB /* Registerview.swift in Sources */,
 				B89DF21C2B954FB500EC9CEB /* rocketgamesApp.swift in Sources */,
