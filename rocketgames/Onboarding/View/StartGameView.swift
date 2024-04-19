@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct StartGameView: View {
-//    @Binding var lifeTotal = nil
     var onboardingViewModel: OnboardingViewModel
     
     var body: some View {
@@ -19,13 +18,11 @@ struct StartGameView: View {
                 .font(.title)
                 .bold()
             
-            //        TODO: add logic for starting life total buttons
             HStack {
                 Button("10", action: {
                     onboardingViewModel.lifeTotal = 10
-                    print("life total is: ", onboardingViewModel.lifeTotal)
                 })
-                .font(.headline)
+                .font(.system(size: 24))
                 .padding(.vertical, 30)
                 .padding(.horizontal, 30)
                 .foregroundStyle(Color.white)
@@ -36,9 +33,8 @@ struct StartGameView: View {
                 
                 Button("20", action: {
                     onboardingViewModel.lifeTotal = 20
-                    print("life total is: ", onboardingViewModel.lifeTotal)
                 })
-                .font(.headline)
+                .font(.system(size: 24))
                 .padding(.vertical, 30)
                 .padding(.horizontal, 30)
                 .foregroundStyle(Color.white)
@@ -49,9 +45,8 @@ struct StartGameView: View {
                 
                 Button("40", action: {
                     onboardingViewModel.lifeTotal = 40
-                    print("life total is: ", onboardingViewModel.lifeTotal)
                 })
-                .font(.headline)
+                .font(.system(size: 24))
                 .padding(.vertical, 30)
                 .padding(.horizontal, 30)
                 .foregroundStyle(Color.white)
@@ -64,19 +59,14 @@ struct StartGameView: View {
 //                TODO: update custom to popup a sheet or modal
                 Button("Custom", action: {
                     onboardingViewModel.lifeTotal = 100
-                    print("life total is: ", onboardingViewModel.lifeTotal)
                 })
-                .font(.headline)
+                .font(.system(size: 24))
                 .padding(.vertical, 30)
                 .padding(.horizontal, 30)
                 .frame(maxWidth: .infinity)
-                .foregroundStyle(Color.orange)
-                .background(Color.white)
+                .foregroundStyle(Color.white)
+                .background(Color.gray)
                 .cornerRadius(5)
-                .overlay(
-                    RoundedRectangle(cornerRadius: 5)
-                        .stroke(Color.orange, lineWidth: 1)
-                )
             }
             
             Spacer()
