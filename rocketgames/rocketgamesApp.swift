@@ -13,6 +13,7 @@ struct rocketgamesApp: App {
     // register app delegate for Firebase setup
     
     @StateObject var viewModel = AuthViewModel()
+    var onboardingViewModel = OnboardingViewModel()
     
     init() {
         FirebaseApp.configure()
@@ -20,7 +21,7 @@ struct rocketgamesApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView().environmentObject(viewModel)
+            ContentView(onboardingViewModel: OnboardingViewModel()).environmentObject(viewModel)
         }
     }
 }

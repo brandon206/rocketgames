@@ -11,6 +11,7 @@
 		B82A0C912BD0EE1600C546E4 /* CustomNavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A0C902BD0EE1600C546E4 /* CustomNavigationButton.swift */; };
 		B82A0C932BD0F48400C546E4 /* DotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A0C922BD0F48400C546E4 /* DotView.swift */; };
 		B82A0C952BD0FBA100C546E4 /* StartGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82A0C942BD0FBA100C546E4 /* StartGameView.swift */; };
+		B84F02842BD23E52002D8A8C /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84F02832BD23E52002D8A8C /* OnboardingViewModel.swift */; };
 		B89DF21C2B954FB500EC9CEB /* rocketgamesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF21B2B954FB500EC9CEB /* rocketgamesApp.swift */; };
 		B89DF21E2B954FB500EC9CEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF21D2B954FB500EC9CEB /* ContentView.swift */; };
 		B89DF2202B954FB500EC9CEB /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89DF21F2B954FB500EC9CEB /* Item.swift */; };
@@ -64,6 +65,7 @@
 		B82A0C902BD0EE1600C546E4 /* CustomNavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationButton.swift; sourceTree = "<group>"; };
 		B82A0C922BD0F48400C546E4 /* DotView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotView.swift; sourceTree = "<group>"; };
 		B82A0C942BD0FBA100C546E4 /* StartGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameView.swift; sourceTree = "<group>"; };
+		B84F02832BD23E52002D8A8C /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		B89DF2182B954FB500EC9CEB /* rocketgames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rocketgames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B89DF21B2B954FB500EC9CEB /* rocketgamesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rocketgamesApp.swift; sourceTree = "<group>"; };
 		B89DF21D2B954FB500EC9CEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -127,10 +129,27 @@
 		B82A0C8D2BD0EAB600C546E4 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				B84F02822BD23E3F002D8A8C /* ViewModel */,
+				B84F02812BD23E31002D8A8C /* View */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		B84F02812BD23E31002D8A8C /* View */ = {
+			isa = PBXGroup;
+			children = (
 				B82A0C8E2BD0EAC400C546E4 /* OnboardingView.swift */,
 				B82A0C942BD0FBA100C546E4 /* StartGameView.swift */,
 			);
-			path = Onboarding;
+			path = View;
+			sourceTree = "<group>";
+		};
+		B84F02822BD23E3F002D8A8C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B84F02832BD23E52002D8A8C /* OnboardingViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		B89DF20F2B954FB500EC9CEB = {
@@ -364,6 +383,7 @@
 				B82A0C912BD0EE1600C546E4 /* CustomNavigationButton.swift in Sources */,
 				B8EE9B032BC0CAEB00FD9613 /* SettingsRowView.swift in Sources */,
 				B8EE9B0E2BC0D32D00FD9613 /* AuthViewModel.swift in Sources */,
+				B84F02842BD23E52002D8A8C /* OnboardingViewModel.swift in Sources */,
 				B89DF2872BC0C5AE00EC9CEB /* ProfileView.swift in Sources */,
 				B8EE9B082BC0CDA200FD9613 /* User.swift in Sources */,
 				B82A0C932BD0F48400C546E4 /* DotView.swift in Sources */,

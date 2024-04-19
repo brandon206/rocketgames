@@ -9,11 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var viewModel: AuthViewModel
+    var onboardingViewModel: OnboardingViewModel
     
     var body: some View {
         Group {
             if viewModel.userSession != nil {
-                OnboardingView()
+                OnboardingView(onboardingViewModel: OnboardingViewModel())
             } else {
                 Loginview()
             }
@@ -22,5 +23,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ContentView(onboardingViewModel: OnboardingViewModel())
 }
